@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en" class="no-focus-outline">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <title>pmCoding</title>
+</head>
+<body>
+    <span id="top"></span>
+    <header>
+        <div class="navigation">
+            <div class="burger">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <nav id="nav" class="notransition">
+                <ul>
+                    <li><a href="#skills" class="nav-links">Skills</a></li>
+                    <li><a href="#projects" class="nav-links">Portfolio</a></li>
+                    <li><a href="#tutorials" class="nav-links">Tutorials</a></li>
+                    <li><a href="#contact" class="nav-links">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <span>pmCoding</span>
+    </header>
+
+    <div class="welcome">
+        <div class="welcome-video">
+            <video autoplay muted loop playsinline id="welcome-video">
+                <source src="img/header.mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <div class="welcome-copy">
+            <h1>Patricia Molnar</h1>
+            <p>Front End Web Developer</p>
+            <a href="#projects" class="button">Portfolio</a>
+        </div>
+    </div>
+
+    <main>
+
+        <section class="main-skills" id="skills">
+            <h2 class="section-title">Skills</h2>
+            <div class="main-skills-coding">
+        
+                <div class="main-skills-coding-frontend">
+                    <p class="title">Front End</p>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript (ES5, ES6, +)</li>
+                        <li>jQuery</li>
+                        <li>React</li>
+                        <li>Responsive Web Design</li>
+                        <li>Cross Browser Compatibility</li>
+                    </ul>
+                </div>
+
+                <div class="main-skills-coding-backend">
+                    <p class="title">Back End</p>
+                    <ul>
+                        <li>PHP</li>
+                        <li>Node.js</li>
+                    </ul>
+                </div>
+
+                <div class="main-skills-coding-cms">
+                    <p class="title">CMS</p>
+                    <ul>
+                        <li>WordPress</li>
+                    </ul>
+                </div>
+
+                <div class="main-skills-coding-other">
+                    <p class="title">Other</p>
+                    <ul>
+                        <li>Git & Github</li>
+                        <li>Gulp</li>
+                        <li>Sass</li>
+                        <li>npm</li>
+                        <li>Basic Photoshop</li>
+                        <li>Basic Inkscape</li>
+                        <li>Video Editing (VSDC)</li>
+                        <li>Audio Editing (Audacity)</li>
+                        <li>Management</li>
+                        <li>Copywriting</li>
+                        <li>Translations</li>
+                        <li>Languages: English, German, Hungarian</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        
+        <section class="main-project" id="projects">
+            <h2 class="section-title">Porfolio</h2>
+
+            <div class="main-project-grid">
+                <div class="main-project-1">
+                    <p class="title">Charity Website</p>
+                    <div class="main-project-video">
+                        <video autoplay muted loop playsinline 
+                        poster="img/TMHBP-poster.png"
+                        class="lazy-video">
+                            <source data-src="img/pmCoding-TMHBP.mp4">
+                            Your browser does not support HTML5 video.
+                        </video>
+                    </div>
+                    <p>
+                        This bilingual website was created using 
+                        <span class="different">HTML5</span>, 
+                        <span class="different">CSS3</span>, 
+                        <span class="different">JavaScript</span> and 
+                        <span class="different">PHP</span>. It is cross browser compatible, including Internet Explorer. 
+                    </p>
+                    <p>
+                        The website features a contact form that I hand-coded with PHP. It sends
+                        emails to the inbox located on the hosting server, which then get forwarded to the client's Gmail
+                        account, so she can send and receive emails directly from her Gmail account. 
+                    </p>
+                        
+                    <p>
+                        It also makes use of PHP Sessions and JavaScript cookies.
+                    </p> 
+                     
+                    <p>
+                        Additionally, in Chrome, the header features an interactive
+                        animation that makes the stars grow and shrink based on whether 
+                        the user is hovering over them. 
+                    </p>
+                    <p>
+                        As the website is live, the source code is not available to the public.
+                    </p>
+
+                    <a href="http://hazakiserotelefon.hu/" target="_blank" class="button">Visit site</a>
+                </div>
+    
+                <div class="main-project-2">
+                    <p class="title">Police API</p>
+                    <div class="main-project-video">
+                        <video autoplay muted loop playsinline 
+                        poster="img/police-poster.png"
+                        class="lazy-video">
+                            <source data-src="img/pmCoding-police.mp4">
+                            Your browser does not support HTML5 video.
+                        </video>
+                    </div>
+                    <p>
+                        This project was built using <span class="different">jQuery</span> and 
+                        <span class="different">Sass</span>, and makes use of two rest 
+                        <span class="different">APIs</span>. 
+                        It is compatible with older browsers, such as 
+                        <span class="different">Internet Explorer</span>. 
+                    </p>
+
+                    <p>
+                        A user can enter their British postcode and select a month. Based on this input, this single 
+                        page application will return data on Police stop and searches in their area. The information shown
+                        includes the reasons for the searches and their resolution (e.g. whether the suspect was arrested).
+                    </p>
+                    
+                    <a href="http://pmcoding.co.uk/police/" target="_blank" class="button">Try it yourself</a>
+                    <a href="https://github.com/patriciamolnar/police-API" target="_blank" class="button">Source code</a>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="main-tutorial" id="tutorials">
+            <h2 class="section-title">YouTube Tutorials</h2>
+            <p>I recently created a YouTube channel, called <a href="">pmCoding tutorials</a>.</p>
+                
+            <p> 
+                Here, I share front-end coding tutorials with the world. 
+                I currently mainly focus on HTML, CSS and JavaScript, but I want to expand eventually and 
+                add tutorials on React, PHP, WordPress and much more. 
+            </p>
+
+            <p>Some of my videos are:</p>
+            <div class="main-tutorial-container">
+                <div class="main-tutorial-example">
+                    <p class="title">Responsive Navbar</p>
+
+                    <video autoplay muted loop playsinline 
+                    poster="img/nav.png"
+                    class="lazy-video">
+                        <source data-src="img/pmCoding-responsive-navbar.mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+
+                    <p>    
+                        This tutorial builds a responsive and accessible nagivation bar from scratch.  
+                    </p>
+                    
+                    <div class="tutorial-links">
+                        <a href="https://www.youtube.com/watch?v=oNqzVS3813s&list=PLVpIfGYOn8DZgNPTAied-7Kh7n7ncVaGE" target="_blank" class="svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" id="youtube" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.441 16.892c-2.102.144-6.784.144-8.883 0-2.276-.156-2.541-1.27-2.558-4.892.017-3.629.285-4.736 2.558-4.892 2.099-.144 6.782-.144 8.883 0 2.277.156 2.541 1.27 2.559 4.892-.018 3.629-.285 4.736-2.559 4.892zm-6.441-7.234l4.917 2.338-4.917 2.346v-4.684z"/></svg></a>
+                        <a href="https://github.com/patriciamolnar/responsive-navigation-2020" target="_blank" class="svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+                        <a href="https://codepen.io/patriciamolnar/full/JjKLvYv" target="_blank" class="button">View Live</a>
+                    </div>
+                </div>
+    
+                <div class="main-tutorial-example">
+                    <p class="title">Intersection Observer</p>
+    
+                    <video autoplay muted loop playsinline 
+                    poster="img/intersection-poster.png"
+                    class="lazy-video">
+                        <source data-src="img/pmCoding-intersection-underline.mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+                    
+                    <p>                        
+                        With the help of JavaScript's Intersection Observer API, I create 
+                        underlines that smoothly slide in as the user scrolls.   
+                    </p>
+
+                    <div class="tutorial-links">
+                        <a href="https://www.youtube.com/watch?v=B7laJa9KUaI&t=1s" target="_blank" class="svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" id="youtube" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.441 16.892c-2.102.144-6.784.144-8.883 0-2.276-.156-2.541-1.27-2.558-4.892.017-3.629.285-4.736 2.558-4.892 2.099-.144 6.782-.144 8.883 0 2.277.156 2.541 1.27 2.559 4.892-.018 3.629-.285 4.736-2.559 4.892zm-6.441-7.234l4.917 2.338-4.917 2.346v-4.684z"/></svg></a>
+                        <a href="https://github.com/patriciamolnar/animated-underline-intersection-observer" target="_blank" class="svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+                        <a href="https://codepen.io/patriciamolnar/full/LYZgJPE" target="_blank" class="button">View Live</a>
+                    </div>
+                </div>
+    
+                <div class="main-tutorial-example">
+                    <p class="title">Colour Changing Dots Nav Icon</p>
+    
+                    <video autoplay muted loop playsinline 
+                    poster="img/dots-poster.png"
+                    class="lazy-video">
+                        <source data-src="img/pmCoding-dots-navigation.mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+
+                    <p>                        
+                        A fun dots navigation menu that is comprised of dots that invidivually change
+                        color and smoothly transition.    
+                    </p>
+
+                    <div class="tutorial-links">
+                        <a href="https://www.youtube.com/watch?v=hzmGprl763k" target="_blank" class="svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" id="youtube" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.441 16.892c-2.102.144-6.784.144-8.883 0-2.276-.156-2.541-1.27-2.558-4.892.017-3.629.285-4.736 2.558-4.892 2.099-.144 6.782-.144 8.883 0 2.277.156 2.541 1.27 2.559 4.892-.018 3.629-.285 4.736-2.559 4.892zm-6.441-7.234l4.917 2.338-4.917 2.346v-4.684z"/></svg></a>
+                        <a href="https://github.com/patriciamolnar/colour-changing-dots-navigation" target="_blank" class="svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+                        <a href="https://codepen.io/patriciamolnar/full/QWEpBEJ" target="_blank" class="button">View Live</a>
+                    </div>
+                </div>
+
+                <div class="main-tutorial-example">
+                    <p class="title">Colour Changing Burger Nav Icon</p>
+    
+                    <video autoplay muted loop playsinline 
+                    poster="img/burger-poster.png"
+                    class="lazy-video">
+                        <source data-src="img/pmCoding-burger-navigation.mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+
+                    <p> 
+                        A burger navigation menu that has invidivually
+                        color-changing and transitioning bars.    
+                    </p>
+
+                    <div class="tutorial-links">
+                        <a href="https://www.youtube.com/watch?v=_7lpzFfmYiY" target="_blank" class="svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" id="youtube" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.441 16.892c-2.102.144-6.784.144-8.883 0-2.276-.156-2.541-1.27-2.558-4.892.017-3.629.285-4.736 2.558-4.892 2.099-.144 6.782-.144 8.883 0 2.277.156 2.541 1.27 2.559 4.892-.018 3.629-.285 4.736-2.559 4.892zm-6.441-7.234l4.917 2.338-4.917 2.346v-4.684z"/></svg></a>
+                        <a href="https://github.com/patriciamolnar/colour-changing-burger-navigation" target="_blank" class="svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+                        <a href="https://codepen.io/patriciamolnar/full/BazKogw" target="_blank" class="button">View Live</a>
+                    </div>
+                </div>
+    
+                <div class="main-tutorial-example">
+                    <p class="title">HTML Course</p>
+                    
+                    <img src="img/HTMLtutorial.png" alt="">           
+    
+                    <p>                        
+                        An HTML5 course for coding newbies. (I am currently still
+                        releasing episodes, adding one every working day (Monday - Friday)).  
+                    </p>
+                    <div class="tutorial-links">
+                        <a href="https://www.youtube.com/watch?v=Vs_Uhcm38pM&list=PLVpIfGYOn8DbEDIPcSgmxMk4AfoXMLwQF" target="_blank" class="svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" id="youtube" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.441 16.892c-2.102.144-6.784.144-8.883 0-2.276-.156-2.541-1.27-2.558-4.892.017-3.629.285-4.736 2.558-4.892 2.099-.144 6.782-.144 8.883 0 2.277.156 2.541 1.27 2.559 4.892-.018 3.629-.285 4.736-2.559 4.892zm-6.441-7.234l4.917 2.338-4.917 2.346v-4.684z"/></svg></a>
+                    </div>
+                </div>
+                
+
+            </div>
+            
+        </section>
+
+        <section class="main-contact" id="contact">
+            <h2 class="section-title">About & Contact</h2>
+
+            <div class="main-contact-flex">
+                <div class="main-contact-about">
+                    <p>Hello, my name is Patricia Molnar. 
+                        I am a self-taught web developer, who loves to code, design and create new projects.
+                    </p>
+
+                    <p>On my website, <a href="http://pmCoding.co.uk/" target="_blank">pmCoding</a> I
+                        also share web development news and ideas.
+                    </p>
+
+                    <p>
+                        If you have any questions or would like to know more about my projects or skills, 
+                        please reach out. 
+                    </p>    
+                
+                </div>
+
+                <div class="main-about-socials">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 12.713l-11.985-9.713h23.971l-11.986 9.713zm-5.425-1.822l-6.575-5.329v12.501l6.575-7.172zm10.85 0l6.575 7.172v-12.501l-6.575 5.329zm-1.557 1.261l-3.868 3.135-3.868-3.135-8.11 8.848h23.956l-8.11-8.848z"/></svg>
+                        <span><a href="mailto:">info@pmCoding.co.uk</a></span>
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M18.48 22.926l-1.193.658c-6.979 3.621-19.082-17.494-12.279-21.484l1.145-.637 3.714 6.467-1.139.632c-2.067 1.245 2.76 9.707 4.879 8.545l1.162-.642 3.711 6.461zm-9.808-22.926l-1.68.975 3.714 6.466 1.681-.975-3.715-6.466zm8.613 14.997l-1.68.975 3.714 6.467 1.681-.975-3.715-6.467z"/></svg>
+                        <span>07752699930</span>
+                    </div>
+                    <a href="https://www.linkedin.com/in/patricia-molnar-a469471b3/" target="_blank">LinkedIn</a> <br>
+                    <a href="https://github.com/patriciamolnar" target="_blank">Github</a> <br>
+                    <a href="https://www.youtube.com/channel/UCnTVj2blZd_9_xpbo2t7ARw" target="_blank">YouTube channel</a> <br>
+                    <a href="https://twitter.com/pmcoding" target="_blank">Twitter</a> <br>
+                    <a href="http://pmcoding.co.uk/" target="_blank">My website</a> <br>
+                </div>
+            </div>
+        </section>  
+        <div class="arrow-container">
+            <a href="#top"><i class="arrow"></i></a></div>
+           </div>
+    </main>
+
+    <footer>
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 12.713l-11.985-9.713h23.971l-11.986 9.713zm-5.425-1.822l-6.575-5.329v12.501l6.575-7.172zm10.85 0l6.575 7.172v-12.501l-6.575 5.329zm-1.557 1.261l-3.868 3.135-3.868-3.135-8.11 8.848h23.956l-8.11-8.848z"/></svg>
+            <span><a href="mailto:">info@pmCoding.co.uk</a></span>
+        </div>
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M18.48 22.926l-1.193.658c-6.979 3.621-19.082-17.494-12.279-21.484l1.145-.637 3.714 6.467-1.139.632c-2.067 1.245 2.76 9.707 4.879 8.545l1.162-.642 3.711 6.461zm-9.808-22.926l-1.68.975 3.714 6.466 1.681-.975-3.715-6.466zm8.613 14.997l-1.68.975 3.714 6.467 1.681-.975-3.715-6.467z"/></svg>
+            <span>07752699930</span>
+        </div>
+            
+        <div>
+            <a href="http://pmcoding.co.uk/" target="_blank">pmCoding</a>
+        </div>
+    </footer>
+    
+</body>
+</html>
